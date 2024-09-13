@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, createContext, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import {
   createBrowserRouter,
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/tasks",
-    element: <Tasks />,
+    element: ((localStorage.getItem("shift") == null) || (localStorage.getItem("position") == null)) ? <Home /> : <Tasks />,
   },
 ]);
 
