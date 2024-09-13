@@ -116,3 +116,13 @@ html, body, #root {
   font-size: 1.75em;
   padding: 1rem;
 }
+
+.view-checklist-button {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(135deg, rgb(158, 36, 50) 0%, rgb(206, 45, 63) 100%);
+  border-radius: 4px;
+  font-size: .5em;
+  font-weight: bold;
+  padding: 1.3em 1em 1.3em 1em;
+}

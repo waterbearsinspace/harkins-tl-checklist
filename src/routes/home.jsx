@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Logo from '../components/logo'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -23,7 +24,7 @@ function Home() {
             <p>Usher</p>
         </section>
 
-        <button>Placeholder</button>
+        <Link to={"/tasks"} className='view-checklist-button'>View Checklist</Link>
       </div>
     </>
   )
