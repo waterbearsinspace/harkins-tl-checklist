@@ -69,7 +69,7 @@ html, body, #root {
   position: absolute;
   width: 10em;
   height: 10em;
-  z-index: inherit
+  z-index: 0;
 }
 
 .gradient.gradient-left {
@@ -82,6 +82,20 @@ html, body, #root {
   right: 0;
   background: radial-gradient(circle, rgba(102, 151, 237, 0.5), rgba(102, 151, 237, 0.03) 65%, rgba(102, 151, 237, 0) 70%);
   transform: translateX(5em);
+}
+
+.container.error > * {
+  margin-bottom: 1em;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.error > * {
+  margin: 0 .5em 0 .5em;
 }
 
 .shift-options {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from '../components/logo'
 import { Link } from 'react-router-dom'
 
@@ -11,6 +11,14 @@ function Home() {
 
   const [shift, setShift] = useState(localStorage.getItem("shift"));
   const [position, setPosition] = useState(localStorage.getItem("position"));
+
+  useEffect( () => {
+    console.log(localStorage.getItem("shift"));
+    console.log(localStorage.getItem("position"));
+    
+    console.log(shift)
+    console.log(position);
+  })
 
   const handleShiftChange = (newShift) => {
     if (localStorage.getItem("shift") == newShift) {

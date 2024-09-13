@@ -19,7 +19,7 @@ function Tasks() {
           <Logo />
           
           <div className='shift-info-container'>
-            Opening Concessions
+            {localStorage.getItem("shift")} {localStorage.getItem("position")} 
           </div>
         </div>
 
