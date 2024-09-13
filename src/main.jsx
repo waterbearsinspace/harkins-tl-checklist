@@ -5,11 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './routes/home';
+import Tasks from './routes/tasks';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/tasks",
+    element: <Tasks />,
   },
 ]);
 
