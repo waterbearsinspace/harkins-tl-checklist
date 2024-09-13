@@ -133,9 +133,10 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.322);
+  background-color: rgba(112, 112, 112, 0.507);
   height: 1.5em;
   width: 1.5em;
   margin: .65em;
   border-radius: 1em;
+  z-index: 1;
 }
