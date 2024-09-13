@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <>
-      <div className='container'>
+      <div className='container container-gap'>
         <header className='logo-container'>
           <Logo />
         </header>
