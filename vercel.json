@@ -1,6 +1,6 @@
 {
   "rewrites":  [
-    {"source": "/", "destination": "/routes/home.jsx"},
-    {"source": "/tasks", "destination": "/routes/tasks.jsx"}
+    {"source": "/", "destination": "./routes/home.jsx"},
+    {"source": "/tasks", "destination": "./routes/tasks.jsx"}
   ]
 }
