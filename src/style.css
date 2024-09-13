@@ -1,3 +1,8 @@
+@font-face {
+  font-family: RationalDisplay;
+  src: url(/src/assets/RationalDisplay-Medium.woff);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 html, body, #root {
   background-color: rgb(15, 19, 39);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: RationalDisplay, Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   height: 100%;
 }
@@ -17,7 +22,63 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 1em;
+  gap: 2.25em;
+}
+
+.container.task-view {
+  gap: 0;
+  min-height: 100%;
+  justify-content: start;
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.logo-container > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container > * > p {
+  padding-top: .25em;
+  font-size: .75em;
+}
+
+.logo-container.task-view {
+  padding: 1.5em 0 1.5em 0;
+}
+
+.logo-container.task-view > * {
+  font-size: .6em;
+}
+
+.gradient-container {
+  position: absolute;
+  width: 100%;
+  height: 10em;
+}
+
+.gradient {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  z-index: inherit
+}
+
+.gradient.gradient-left {
+  left: 0;
+  background: radial-gradient(circle, rgba(206, 45, 63, 0.5), rgba(206, 45, 63, 0.03) 65%, rgba(206, 45, 63, 0) 70%);
+  transform: translateX(-5em);
+}
+
+.gradient.gradient-right {
+  right: 0;
+  background: radial-gradient(circle, rgba(102, 151, 237, 0.5), rgba(102, 151, 237, 0.03) 65%, rgba(102, 151, 237, 0) 70%);
+  transform: translateX(5em);
 }
 
 .shift-options {
@@ -27,9 +88,26 @@ html, body, #root {
 }
 
 .card {
-  height: 100%;
+  flex: 1;
   width: 100%;
   background-color: white;
   color: black;
   border-radius: 1em 1em 0 0;
+  z-index: 0;
+}
+
+.card > * {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: .8em;
+}
+
+.shift-info-container {
+  padding-top: 1em;
+  font-size: 1em !important;
+}
+
+.section-title {
+  font-size: 1.75em;
+  padding: 1rem;
 }

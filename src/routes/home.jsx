@@ -1,17 +1,16 @@
 import { useState } from 'react'
+import Logo from '../components/logo'
 
 function Home() {
 
   return (
     <>
       <div className='container'>
-        <header>
-          <h1>
-            Logo
-          </h1>
+        <header className='logo-container'>
+          <Logo />
         </header>
 
-        <p>Day | Date</p>
+        <p>SUNDAY | SEP 7</p>
         
         <section className='shift-options'>
             <p>Opening</p>
