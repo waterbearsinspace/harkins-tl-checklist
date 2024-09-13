@@ -3,6 +3,11 @@ import Logo from '../components/logo'
 import { Link } from 'react-router-dom'
 
 function Home() {
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday",
+    "Thursday", "Friday", "Saturday"];
+  const today = new Date();
+  const day = today.getDay();
+  const month = today.toLocaleString('default', {month: 'short'});
 
   return (
     <>
@@ -11,7 +16,7 @@ function Home() {
           <Logo />
         </header>
 
-        <p>SUNDAY | SEP 7</p>
+        <p>{days[day].toUpperCase()} | {month.toUpperCase()} {today.getDate()}</p>
         
         <section className='shift-options'>
             <p>Opening</p>
