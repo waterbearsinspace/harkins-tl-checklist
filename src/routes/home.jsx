@@ -9,16 +9,10 @@ function Home() {
   const day = today.getDay();
   const month = today.toLocaleString('default', {month: 'short'});
 
+  localStorage.setItem("day", days[day])
+
   const [shift, setShift] = useState(localStorage.getItem("shift"));
   const [position, setPosition] = useState(localStorage.getItem("position"));
-
-  useEffect( () => {
-    console.log(localStorage.getItem("shift"));
-    console.log(localStorage.getItem("position"));
-    
-    console.log(shift)
-    console.log(position);
-  })
 
   const handleShiftChange = (newShift) => {
     if (localStorage.getItem("shift") == newShift) {

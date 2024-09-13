@@ -148,7 +148,7 @@ html, body, #root {
 
 .section-title {
   font-size: 1.75em;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .view-checklist-button {
@@ -173,4 +173,19 @@ html, body, #root {
   margin: .65em;
   border-radius: 1em;
   z-index: 1;
+}
+
+.task-container {
+  margin-bottom: 1em;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.task-name {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.task-description {
+  font-size: .9em;
+  text-wrap: pretty;
 }
