@@ -86,8 +86,10 @@ html, body, #root {
 
 .shift-options {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+}
+
+.shift-options > * {
+  margin: 0 .5em 0 .5em;
 }
 
 .card {
