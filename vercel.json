@@ -1,0 +1,6 @@
+{
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"},
+    {"source": "/tasks", "destination": "/routes/tasks.jsx"}
+  ]
+}
