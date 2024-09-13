@@ -6,8 +6,8 @@ function Tasks() {
 
   return (
     <>
-      <div className='container container-task-view'>
-        <div className='logo-container logo-container-task-view'>
+      <div className='container task-view'>
+        <div className='logo-container task-view'>
           <Logo />
           
           <div className='shift-info-container'>
