@@ -1,12 +1,20 @@
 import { useState } from 'react'
 import Logo from '../components/logo'
 import TaskList from '../components/tasklist'
+import XButton from '../components/xbutton'
+import { Link } from 'react-router-dom'
 
 function Tasks() {
 
   return (
     <>
       <div className='container task-view'>
+        <Link to={"/"}>
+          <div className='xButton'> 
+            <XButton />
+          </div>
+        </Link>
+        
         <div className='logo-container task-view'>
           <Logo />
           

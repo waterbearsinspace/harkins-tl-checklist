@@ -126,3 +126,16 @@ html, body, #root {
   font-weight: bold;
   padding: 1.3em 1em 1.3em 1em;
 }
+
+.xButton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.322);
+  height: 1.5em;
+  width: 1.5em;
+  margin: .65em;
+  border-radius: 1em;
+}
