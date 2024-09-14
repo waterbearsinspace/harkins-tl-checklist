@@ -9,24 +9,94 @@ function Task(position, shift, type, taskName, description, day) {
 
 const tasks = [];
 
-// BOX
+// CONCESSIONS --------------------------
+// OPENING
 
 tasks.push(new Task(
-  "Box", "Opening", "Opening", 
-  "Setup Condiment Stands", 
-  "Take the clean dishes off the rack and place them in the condiment stands (front and back)"
+  "Concessions", "Opening", "Opening",
+  "Turn on Ovens, Fryers, Hatcos, and Hot Dog Rollers & Warmers",
+  "Verif the equipment is working and notify a manger if something does not.",
 ));
 
 tasks.push(new Task(
-  "Box", "Opening", "Opening", 
-  "Setup Condiment Stands", 
-  "Take the clean dishes off the rack and place them in the condiment stands (front and back)"
+  "Concessions", "Opening", "Opening",
+  "Setup Poppers with Filters, Bin Cover, and Kettle Parts",
+  "Ensure the popper is ready to go with all the filters in, bin cover, and crumb catcher.",
 ));
 
 tasks.push(new Task(
-  "Box", "Opening", "Opening", 
-  "Setup Condiment Stands", 
-  "Take the clean dishes off the rack and place them in the condiment stands (front and back)"
+  "Concessions", "Opening", "Opening",
+  "Run Chemical Batches",
+  "Run 2 chemical batches through the poppers.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Warm Up Nachos and Cheese",
+  "Place the nachos and cheese on the hatcos, make sure the hatco is set to at least 2.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Setup Soda Towers and Run Lines",
+  "Put on the nozzles, grate, and sides onto the soda towers. Run the lines by pressing the \"small\" soda button on each dispenser.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Setup Pretzel Station",
+  "Ensure the drawer is setup for use, the dishes are placed, and the margarine is starting to melt. You can set the dial to 6-7 for it to melt and once it started melting bring the dial down to 3.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Place Utensils and Other Items for the Ovens, Fryers, and Poppers",
+  "Ensure the grate is in the oven and the baskets and filters are in the fryer. Make sure the popcorn scoops, tongs, and other utensils are out where they are needed.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Set Out the Displays",
+  "Set out 4 displays (for weekdays) and 6 displays (for weekends). All popcorn sizes and drink sizes must be displayed with the Harkins logo facing out.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Put Out Cups For Registers Being Used for the Day",
+  "Check how many cashiers will be in the stand and take out the appropriate amoount of cups. Place them at the registers that have money once the registers are setup.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Complete Equipment Checks",
+  "Fill out equipment checks log located in concessions stand.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Huddles",
+  "Take the Huddle Cards and go over it with the team. If no Huddle Cards then please make sure you go over expectations of the day with the team.",
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Opening",
+  "Plan Breaks and Register Assignments",
+  "Plan your 10s and meals for your team and assign registers to ALL cashiers for the day.",
+));
+
+// WEEKLY
+tasks.push(new Task(
+  "Concessions", "Opening", "Weekly", 
+  "Clean Stainless Steel Wall", 
+  "Use degreaser for the stainless steel wall behind the fryer and the ovens.",
+  "Saturday"
+));
+
+tasks.push(new Task(
+  "Concessions", "Opening", "Weekly", 
+  "Check for Expired BIBs", 
+  "Check to see if there are any expired BIBs hooked up or on the pallets. If there is notify a manager, replace the BIBs if necessary, and throw the expired BIB out.",
+  "Saturday"
 ));
 
 // USHER --------------------------------
