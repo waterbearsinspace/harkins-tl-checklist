@@ -180,7 +180,7 @@ function TaskList() {
 
   // BOX - CLOSING ------------------------
   {
-    // OPENING
+    // Closing
     
     tasks.push(new Task(
       "Box", "Closing", "Closing", 
@@ -479,97 +479,97 @@ function TaskList() {
     // Closing
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Wipe Down All Registers, Scanners, Card Readers, and the Hot Food Monitor",
       "Ensure that the screens are smudge free and the scanners & card readers are not sticky. Don't spray screens, only the rags."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Clean Out Drains and Pour Drain Release",
       "Clear all debris from the drains first, then get Drain Release from Closet 2 or 15 and pour it down the drains. One Bottle should be able to cover all the drains."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Clean Pretzel Station",
       "Ensure that there is no grease on the drawer and double check all crevices."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Wipe Down Butter Machines and Place Drip Trays on Dirty Rack",
       "Wipe down the butter machines and take the drip trays to the dirty dish rack."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Wipe Down Icee Machines and Place Drip Trays on Dirty Rack",
       "Wipe down the icee machines and take the drip trays to the dirty dish rack."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Place All Used Dishes on Dirty Rack",
       "Double check the stand and ensure all dishes got placed on the dirty rack."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Place Fryer Filters, Baskets, and Drop Drawers on Dirty Rack",
       "Ensure the fryer is broken down and put it all on the dirty rack. The biggest of the filters stays in the fryer; it cannot get wet."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Sweep and Mop Concessions Support",
       "Sweep and mop behind concessions and double check under the soda BIB racks."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Place Nozzles in K-5 Solution",
       "Let the nozzles soak in warm water and K-5. Check the packet for water to K-5 ratio."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Stock Ice and Empty Out Ice Carts",
       "Ensure all the ice bins are full with ice and that the ice cart are completely empty."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Take Out Trash and Cardboard",
       "Take out all concessions trash and all the cardboard."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Clean Out Ovens",
       "Use degreaser or Action and a scrubbie to get the inside of the oven clean, then wipe down the outside."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Sweep Stand",
       "Ensure there is no popcorn or any other debris on the ground. Double check underneath all the poppers & back bar table and sweep up anything you see."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Put Remaining Stock Away",
       "Double check that all remaining stock is put away in the appropriate places."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Remind Team to Ring in XL Refills",
       "Ensure the team knows the standards for the day, including ringing in XL popcorn refills."
     ));
     
     tasks.push(new Task(
-      "Concessions", "Closing", "Daily", 
+      "Concessions", "Closing", "Closing", 
       "Huddles",
       "Take the Huddle Cards and go over them with the team. If no Huddle Cards then please make sure you go over expectations of the day with the team."
     ));
@@ -1013,14 +1013,14 @@ function TaskList() {
 
   return (
     <>
-      <h1 className='section-title'>Opening</h1>
+      <h1 className='section-title'>{localStorage.getItem("shift")}</h1>
       {tasks
       .filter((task) => 
         {
           return ( 
           (task.shift == localStorage.getItem("shift")) && 
           (task.position == localStorage.getItem("position")) &&
-          (task.type == "Opening")
+          (task.type == localStorage.getItem("shift"))
         )
       })
       .map((task) => {
