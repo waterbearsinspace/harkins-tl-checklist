@@ -11,7 +11,8 @@ function TaskList() {
   
   const tasks = [];
 
-
+  // TASKS --------------------------------
+  {
   // BOX - OPENING ------------------------
   {
     // OPENING
@@ -77,7 +78,7 @@ function TaskList() {
     ));
     
     tasks.push(new Task(
-      "Concessions", "Opening", "Opening",
+      "Box", "Opening", "Opening",
       "Huddles",
       "Take the Huddle Cards and go over it with the team. If no Huddle Cards then please make sure you go over expectations of the day with the team.",
     ));
@@ -316,7 +317,7 @@ function TaskList() {
     tasks.push(new Task(
       "Box", "Closing", "Daily", 
       "Wipe Down Seating Screens, Card Readers, and Kiosks",
-      "Sanitize the screens, card readers, and the kiosks. Please do not spray them down directly/"
+      "Sanitize the screens, card readers, and the kiosks. Please do not spray them down directly."
     ));
     
     tasks.push(new Task(
@@ -487,7 +488,7 @@ function TaskList() {
     tasks.push(new Task(
       "Concessions", "Closing", "Closing", 
       "Clean Out Drains and Pour Drain Release",
-      "Clear all debris from the drains first, then get Drain Release from Closet 2 or 15 and pour it down the drains. One Bottle should be able to cover all the drains."
+      "Clear all debris from the drains first, then get Drain Release from Closet 2 or 15 and pour it down the drains. One bottle should be able to cover all the drains."
     ));
     
     tasks.push(new Task(
@@ -668,7 +669,7 @@ function TaskList() {
     tasks.push(new Task(
       "Concessions", "Closing", "Daily", 
       "Clean Underside of Soda Fountains",
-      "Wipe down the underneath of each dispenser on the soda tower with sanitizer. Take off the nozzles first and after you are down, place the nozzle back and run the line."
+      "Wipe down the underneath of each dispenser on the soda tower with sanitizer. Take off the nozzles first and after you are done, place the nozzle back and run the line."
     ));
     
     tasks.push(new Task(
@@ -1009,6 +1010,7 @@ function TaskList() {
       "Turn in Checklist",
       ""
     ));
+  }
   }
 
   return (
